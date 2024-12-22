@@ -7,7 +7,7 @@ inherit desktop unpacker xdg
 
 DESCRIPTION="Multi-platform music-creation system for production, performance and DJing"
 HOMEPAGE="https://www.bitwig.com"
-SRC_URI="https://www.bitwig.com/dl/Bitwig%20Studio/5.3%20Beta%202/installer_linux/ -> {P}.deb"
+SRC_URI="https://www.bitwig.com/dl/Bitwig%20Studio/5.3%20Beta%203/installer_linux/ -> {P}.deb"
 LICENSE="Bitwig"
 SLOT="0"
 KEYWORDS="~amd64"
