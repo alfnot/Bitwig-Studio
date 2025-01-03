@@ -56,15 +56,15 @@ QA_PREBUILT="
 
 S=${WORKDIR}
 
-#src_prepare() {
-#	eapply_user
+src_prepare() {
+	eapply_user
 
-#	sed -i \
-#	-e 's/Icon=.*/Icon=bitwig-studio/' \
-#	-e 's/Categories=.*/Categories=AudioVideo;Audio;AudioVideoEditing/' \
-#	-e '/Version=1.5/d' \
-#	usr/share/applications/com.bitwig.BitwigStudio.desktop || die 'sed on desktop file failed'
-#}
+	sed -i \
+	-e 's/Icon=.*/Icon=bitwig-studio/' \
+	-e 's/Categories=.*/Categories=AudioVideo;Audio;AudioVideoEditing/' \
+	-e '/Version=1.5/d' \
+	usr/share/applications/com.bitwig.BitwigStudio.desktop || die 'sed on desktop file failed'
+}
 
 src_install() {
 	dodir /opt
