@@ -72,9 +72,9 @@ src_install() {
 
 	dosym ../../opt/bitwig-studio/bitwig-studio /usr/bin/bitwig-studio
 
-	if ! use abi_x86_32; then
-		rm "${ED}/opt/bitwig-studio/bin/BitwigPluginHost-X86-SSE41" || die
-	fi
+	#if ! use abi_x86_32; then
+	#	rm "${ED}/opt/bitwig-studio/bin/BitwigPluginHost-X86-SSE41" || die
+	#fi
 
 	doicon -s scalable usr/share/icons/hicolor/scalable/apps/com.bitwig.BitwigStudio.svg
 	domenu usr/share/applications/com.bitwig.BitwigStudio.desktop
